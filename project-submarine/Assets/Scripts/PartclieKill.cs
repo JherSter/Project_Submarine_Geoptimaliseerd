@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PartclieKill : MonoBehaviour {
+public class PartcileKill : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {

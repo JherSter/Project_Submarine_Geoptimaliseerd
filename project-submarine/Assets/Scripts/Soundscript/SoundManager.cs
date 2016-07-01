@@ -4,13 +4,18 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour {
 
-	public AudioSource efxSource;
-	public AudioSource musicSource;
+	[SerializeField]
+	private AudioSource efxSource;
+	[SerializeField]
+	private AudioSource musicSource;
 	public static SoundManager instance = null;
 
-	public float lowPitchRange = .95f;
-	public float highPitchRange = 1.05f;
-	public Slider Slider;
+	[SerializeField]
+	private float lowPitchRange = .95f;
+	[SerializeField]
+	private float highPitchRange = 1.05f;
+	[SerializeField]
+	private Slider Slider;
 
 
 	void Awake ()

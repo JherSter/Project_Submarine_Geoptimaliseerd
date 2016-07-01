@@ -4,8 +4,10 @@ using UnityEngine.UI;
 
 public class _Spawner : MonoBehaviour {
 
-	public Wave[] waves;
-	public EnemyAI enemy;
+	[SerializeField]
+	private Wave[] waves;
+	[SerializeField]
+	private EnemyAI enemy;
 	private GameObject[] gos;
 	public static int WaveNumber = 1;
 	public static bool NextWaveBool;

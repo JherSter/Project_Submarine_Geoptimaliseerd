@@ -5,9 +5,12 @@ using Image=UnityEngine.UI.Image;
 
 public class EnemyHealth : MonoBehaviour 
 {
-	public float health;
-	public float Damage;
-	public GameObject Pickup;
+	[SerializeField]
+	private float health;
+	[SerializeField]
+	private float Damage;
+	[SerializeField]
+	private GameObject Pickup;
 	private int i;
 	private float random;
 	private bool CanHit = true;
@@ -16,11 +19,12 @@ public class EnemyHealth : MonoBehaviour
 	[SerializeField]
 	private Image HealthBar;
 	private UIController uiController;
+
+
+
+
 	[SerializeField]
-
-
-
-	public GameObject particles;
+	private GameObject particles;
 	private ParticleSystem particleEmission;
 	private AudioSource audioSource;
 	[SerializeField]

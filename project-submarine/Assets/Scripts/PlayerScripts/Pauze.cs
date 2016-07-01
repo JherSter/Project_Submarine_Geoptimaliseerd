@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 public class Pauze : MonoBehaviour {
 
 	public static bool Pause = false;
-	public Canvas PauseMenu;
+	[SerializeField]
+	private Canvas PauseMenu;
 
 	void Awake()
 	{

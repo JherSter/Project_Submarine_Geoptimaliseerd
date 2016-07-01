@@ -6,15 +6,22 @@ using System.Collections;
 
 public class SceneHandler : MonoBehaviour {
 
-	public Canvas quitMenu;
-	public Canvas optionMenu;
-	public Canvas creditsMenu;
+	[SerializeField]
+	private Canvas quitMenu;
+	[SerializeField]
+	private Canvas optionMenu;
+	[SerializeField]
+	private Canvas creditsMenu;
 
-	public Button startText;
-	public Button exitText;
+	[SerializeField]
+	private Button startText;
+	[SerializeField]
+	private Button exitText;
 
-	public Text WaveNumber;
-	public Text Score;
+	[SerializeField]
+	private Text WaveNumber;
+	[SerializeField]
+	private Text Score;
 
 	private AudioSource audioSource;
 
